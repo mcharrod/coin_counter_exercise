@@ -24,6 +24,7 @@ class CoinCounter
   def quarter_counter(cents)
     if is_number?(cents) == false
       puts "that's no number silly"
+      exit
     elsif
       @quarter_count = cents.to_i / 25
       @remainder = cents.to_i % 25
